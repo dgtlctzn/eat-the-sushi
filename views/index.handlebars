@@ -11,7 +11,7 @@
                 {{#each sushi}}
                 {{#unless eaten}}
                 <li>
-                    <button type="button" class="btn btn-primary eat-button" data-id="{{this.id}}">🍣 Eat Me!</button>
+                    <button type="button" class="btn btn-primary eat-button" data-id="{{this.id}}" data-bool="{{this.eaten}}">🍣 Eat Me!</button>
                     {{this.sushi_name}}
                 </li>
                 {{/unless}}
