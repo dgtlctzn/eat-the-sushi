@@ -1,5 +1,5 @@
 // const connection = require("./config/connection");
-const routes = require("./controllers/sushi_controller.js");
+const routes = require("./controllers/sushi_controllers");
 const express = require("express");
 const exphbs = require("express-handlebars");
 
