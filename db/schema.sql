@@ -4,7 +4,7 @@ CREATE DATABASE sushi_db;
 
 use sushi_db;
 
-CREATE TABLE sushis (
+CREATE TABLE sushi (
 	id INT AUTO_INCREMENT NOT NULL,
     sushi_name VARCHAR(30) NOT NULL,
     eaten BOOLEAN NOT NULL,
