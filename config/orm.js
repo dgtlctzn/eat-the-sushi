@@ -10,14 +10,17 @@ const orm = {
     insertOne: function (table, cols, values, cb) {
         const colString = cols.toString();
         const valString = values.toString();
-        connection.query("INSERT INTO ?? (??) VALUES (?)"), [table, colString, valString], (err, data) => {
+        connection.query("INSERT INTO ?? (??) VALUES (?)", [table, colString, valString], (err, data) => {
             if (err) throw err;
             cb(data);
-        }
+        })
 
     },
-    updateOne: function () {
-
+    updateOne: function (table, cols, valueObj, condObj, cb) {
+        connection.query("UPDATE ?? SET ? WHERE ?", [table, cols, valueObj, condObj], (err, data) => {
+            if (err) throw err;
+            cb(data);
+        });
     }
 }
 
