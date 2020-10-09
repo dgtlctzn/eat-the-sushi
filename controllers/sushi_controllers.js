@@ -10,22 +10,15 @@ router.get("/", (req, res) => {
 })
 
 router.post("/api/sushi", (req, res) => {
-    // console.log([req.body.sushi_name, req.body.eaten])
     sushi.insertOne(["sushi_name", "eaten"], req.body.sushi_name, (result)=> {
         res.json({ id: result.insertId });
     })
 })
 
-
-
-
-
-
-
-
-
-
-
-
+router.put("/api/sushi/:id", (req, res) => {
+    sushi.updateOne({eaten: true}, {id: req.params.id}, ()=> {
+        res.status(200).end();
+    })
+})
 
 module.exports = router;

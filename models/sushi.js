@@ -11,8 +11,8 @@ const sushi = {
             cb(data);
         })
     },
-    updateOne: function(cols, valueObj, condObj, cb) {
-        orm.updateOne("sushi", cols, valueObj, condObj, function(data) {
+    updateOne: function(valueObj, condObj, cb) {
+        orm.updateOne("sushi", valueObj, condObj, function(data) {
             cb(data);
         })
     }

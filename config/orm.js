@@ -14,8 +14,8 @@ const orm = {
         })
 
     },
-    updateOne: function (table, cols, valueObj, condObj, cb) {
-        connection.query("UPDATE ?? SET ? WHERE ?", [table, cols, valueObj, condObj], (err, data) => {
+    updateOne: function (table, valueObj, condObj, cb) {
+        connection.query("UPDATE ?? SET ? WHERE ?", [table, valueObj, condObj], (err, data) => {
             if (err) throw err;
             cb(data);
         });
