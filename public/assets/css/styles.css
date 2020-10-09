@@ -1,0 +1,45 @@
+.menu {
+    background-color: bisque;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.sushi-form {
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding-top: 10px;
+}
+
+h1 {
+    padding: 20px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    background-color: rgb(39, 39, 39);
+}
+
+h2 {
+    font-family: cursive;
+    text-align: center;
+}
+
+.gif {
+    background-image: url(https://media.giphy.com/media/YYICBjQ6EqHss/giphy.gif);
+    background-size: 100%;
+    height: 340px;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+.eaten {
+    background-color: palegreen;
+    border-radius: 5px;
+    margin: 10px;
+}
