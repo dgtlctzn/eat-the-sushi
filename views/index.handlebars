@@ -1,11 +1,9 @@
+<div id="header">
+    <h1>Eat The Sushi</h1>
+</div>
 <div class="container">
     <div class="row">
-        <div class="col-sm-12">
-            <h1 class="text-center">Sushi</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-3 menu">
             <h2>Menu</h2>
             <ul>
                 {{#each sushi}}
@@ -18,15 +16,13 @@
                 {{/each}}
             </ul>
         </div>
-        <div class="col-sm-4">
-            {{!-- <iframe src="https://giphy.com/embed/YYICBjQ6EqHss" width="480" height="360" frameBorder="0"
-                class="giphy-embed" allowFullScreen></iframe> --}}
+        <div class="col-sm-5 gif">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3 eaten">
             <ul>
                 {{#each sushi}}
                 {{#if eaten}}
-                <li>
+                <li class="eaten-list">
                     😋
                     Eaten!
                     {{this.sushi_name}}
@@ -37,9 +33,9 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-3">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-5">
             <form class="sushi-form">
                 <div class="form-group">
                     <label>What kind of sushi would you like to add to the menu?</label>
