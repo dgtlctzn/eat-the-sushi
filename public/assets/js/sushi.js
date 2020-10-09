@@ -21,7 +21,6 @@ $(function() {
 
         const newSushi = {
             sushi_name: $("#sushi-input").val(),
-            eaten: false,
         }
 
         $.ajax("/api/sushi", {
